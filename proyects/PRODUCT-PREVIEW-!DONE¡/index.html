@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&family=Montserrat:wght@500;700&display=swap');
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    body{
+      background-color: hsl(30, 38%, 92%);
+      height: 500px ;
+      padding-top: 12.5%;
+      
+      
+    }
+    body p{
+      font-size: 14px;
+    }
+    
+    .cardblock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    border-radius: 20px 20px;
+   
+
+    }
+
+    .structure{
+      
+      width: 600px;
+      height: 400px;
+      border-radius: 10px 10px;
+      background-color: white;
+      
+    }
+
+    .structure .izquierda{
+      height: 400px;
+      float: left;
+      margin-right: 40px;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    aside{
+      margin-top: 20px;
+      text-align: start;
+      margin-right: 20px;
+    }
+    #perfume{
+      font-size: 12px;
+      font-family: "Montserrat";
+      font-weight: 500 ;
+      letter-spacing: 3px;
+      color: hsl(228, 12%, 48%);
+      margin-right: 40px;
+      margin-top: 25px;
+      
+    }
+    #comment{
+      font-family: "Montserrat";
+      font-weight: 500 ;
+      color: hsl(228, 12%, 48%);
+      margin-right: 40px;
+      line-height: 20px;
+    }
+    h1{
+      color: hsl(212, 21%, 14%);
+      font-family: "Fraunces";
+      font-weight: 900;
+      font-size: 35px;
+      margin-right: 40px;
+      line-height: 30px;
+    
+      
+    }
+
+    button{
+      background-color: hsl(158, 36%, 37%);
+      height: 45px;
+      width: 250px;
+      margin-left: 15px;
+      border: none;
+      border-radius: 10px 10px;
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+      margin-right: 20px;
+      margin-left: -0px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-family: "Montserrat";
+      font-weight: 700;
+     
+      
+      
+    }
+  
+    
+    button:hover{
+      background-color: hsl(158, 75%, 16%);
+      cursor: pointer;
+    }
+   
+
+   #after{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    font-size: 30px;
+    vertical-align: middle;
+   
+   }
+
+   #before{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-decoration: line-through;
+    vertical-align: middle;
+   }
+  
+   #illo2{
+    vertical-align: middle;
+   }
+
+   footer{
+   text-align: center;
+   margin-top: 5px;
+   margin-right: 5%;
+   }
+  </style>
+</head>
+<body>
+  <div class="cardblock">
+    <div class="structure">
+        <img class="izquierda" src="images/image-product-desktop.jpg" alt="product" >
+          <aside>
+          <p id="perfume">PERFUME</p>
+
+          <h1>Gabrielle  Essence Eau  De Parfum</h1>
+
+         <p id="comment">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+          Perfumer-Creator for the House of CHANEL.</p>
+          <div class="precio">
+          <p><span id="after">$149.99 &nbsp; &nbsp; &nbsp;</span> <span id="before">$169.99</span></p></div>
+          
+         <div class="boton"><button><span id="illo2"><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg></span><span id="illo">&nbsp;  Add to Cart</span></button></div>
+  
+         <footer> <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://github.com/BenGFly">BenGFly</a>.</div></footer>
+        </aside>
+      </div>
+  </div>
+</body>
+</html>
