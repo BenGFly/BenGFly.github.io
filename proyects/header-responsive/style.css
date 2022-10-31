@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+body{
+    margin: 0;
+    background-image: url("https://wallpaperaccess.com/full/1188211.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    height: 75px;
+    margin-left: 20px;
+    
+}
+.logo p{
+    margin-left: 20px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    padding-right: 30px;
+    min-height: 75px;
+    max-height: 300px;
+    border: black 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    border-radius: 0px 0px 10px 10px ;
+}
+
+nav{
+    display: flex;
+    font-size: 30px;
+
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.container{
+   
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    min-width: 400px;
+    border: gold solid 5px;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://media.istockphoto.com/photos/fire-and-ice-concept-design-with-spark-3d-illustration-picture-id1332346365?b=1&k=20&m=1332346365&s=170667a&w=0&h=ALzgkjj8oaiEA_UdLNVg1Rb1HQuWEO0OIvR613du0U4=");
+}
+.total{
+    background-color: orange;
+    border: 10px gold solid;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    min-height: 700px;
+    border-radius: 20px 20px;
+}
+
+.container img{
+    width: 400px;
+    
+}
+
+
+.content{
+    padding: 30px ;
+}
+.content p{
+    font-weight: 600;
+    font-size: 18px;
+    
+   
+}
+.content  img{
+
+    width: 30px;
+}
+
+.emoji{
+    display: flex;
+    justify-content: end;
+  
+}
+
+hr{
+    border-color: black;
+}
+
+@media (max-width:980px){
+
+    header{
+       
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 10px;
+    }
+
+    .container{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+
+}
