@@ -1,47 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- CREADO POR SAMUEL HINESTROSA RODRIGUEZ -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Nightcity_Icon.jpg">
-    <link rel="stylesheet" href="style.css">
-    <title>Mis Proyectos</title>
+    <link rel="shortcut icon" href="ballon-icon.svg" type="image/x-icon">
+    <title>Ballon Destoy</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 830px;
+            position: static;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #start{
+            text-shadow: 3px 0 #fff;
+            position: absolute;
+            width: 600px;
+            height: 60px;
+            border-radius: 30px;
+            color: #00A79E;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 1px solid;
+            cursor: pointer;
+            font-size: 60px;
+            color: transparent;
+            background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+            background-clip: text;
+            animation: color 4s linear infinite;
+            background-size: 500%;   
+            -webkit-background-clip: text;
+        }
+        #box{
+            width: 80px;
+            height: 80px;
+            border: none;
+            position: absolute;
+            cursor: pointer;
+            z-index: 9999;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 80px;
+        }
+        #bot{
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 200px;
+            background-color:#FF5733 ;
+            z-index: 2;
+            cursor: auto;
+        }
+        #fail{
+            position: absolute;
+            bottom: 60%;
+            right: 550px;
+            width: 250px;
+            height: 50px;
+            font-size: 120px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+        }
+        #marcador{
+            position: absolute;
+            bottom: 60%;
+            left: 100px;
+            width: 250px;
+            height: 50px;
+            font-size: 120px;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+      
+        }
+        #tiempo{
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            font-size: 80px;
+            margin-top: 20px;
+            margin-left: 40%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #detras-title{
+            width: 58vw;
+            height: 220px;
+            background-color:  tomato;
+            border: none;
+            border-radius: 50px;
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 99;
+        }
+        #title{
+            text-shadow: 10px 0 #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 140px;
+            position: absolute;
+            text-align: center;
+            width: 90vw;
+            color: transparent;
+            background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: color 4s linear infinite;
+            background-size: 500%;    
+
+           
+        }
+        @keyframes color {
+            from {
+                background-position: 0% 50%;
+            }
+
+            to {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+   
 </head>
 <body>
-
-        <header>
-            <a href="https://github.com/BenGFly" class="logo" target="_blank">
-                <img src="descarga.png" alt="logo"><p>ベン・フライ</p>
-            </a>
-
-            <nav>
-                <a href="#nft" class="nav-link">NFT Preview</a>
-                <a href="#qr" class="nav-link">Qr Code</a>
-                <a href="#product" class="nav-link">Product Preview</a>
-            </nav>
-
-        </header>
-
-
-        <div class="projecto_">
-        <div class="junto">
-           <a name="nft"><h1>NFT PREVIEW</h1></a><a href="proyects/nft-preview-card-component-main/index.html" target="_blank"><img src="NFT.png" alt="image"></a> <p>Este projecto que hice me hizo mucha ilusion ya que tuve que jugar con una imagen en el background, y era la primera vez que lo hacia. La verdad que fue un proyecto bastante entretenido y que me enseñó mucho.</p></div>
-        </div>
-        <div class="projecto__">
-            <div class="junto__">
-                <a name="qr"><h1>QR CODE</h1></a> <a href="proyects/QR-CODE-!DONE¡/index.html" target="_blank"><img src="Qr_code.png" alt="Qr_code"></a> <p>Este fue mi primer projecto, la verdad que en este projecto me costo encontrar las soluciones para poder completarlo, pero fue muy divertido.</p>
-            </div>
-        </div>
-        <div class="projecto_">
-            <div class="junto___">
-                <a name="product"><h1>PRODUCT PREVIEW</h1></a><a href="proyects/PRODUCT-PREVIEW-!DONE¡/index.html" target="_blank"><img src="product_preview.png" alt="product_preview"></a><p>Este es el proyecto que mas ilusion me ha hecho ya que esteticamente me parece muy bueno y no tarde mucho en hacerlo , gracias a la practica del QR y videos de shorts de Youtube que habia visto ya que me ayudaron para centrar.</p>
-            </div>
-        </div>
-        <div class="projecto__">
-            <div class="junto__">
-                <a name="responsive"><h1>Header Responsive</h1></a> <a href="proyects/header-responsive/index.html" target="_blank"><img src="responsive.png" alt="Qr_code"></a> <p>Proyecto de practica de header responsive con contenido, es la primera vez que lo hacia y la verdad que no me tardo mucho teniendo en cuenta que era la primera vez.</p>
-            </div>
-        </div>
+    <audio src="audio/mixkit-ballon-blows-up-3071.wav" id="sonido"></audio>
+    <div id="box" onclick="jugar()"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 473.931 473.931" style="enable-background:new 0 0 473.931 473.931;" xml:space="preserve"><circle style="fill:#ED3351;" cx="236.966" cy="236.966" r="236.966"/><path style="fill:#A0D9DC;" d="M230.631,334.749v83.64h12.666v-83.64H230.631z"/><path style="fill:#00A79E;" d="M230.234,310.128c-14.761,25.811-14.761,25.811-14.761,25.811h18.121h6.731h18.114c0,0,0,0-14.757-25.811H230.234z"/><path style="fill:#15B5AC;" d="M249.62,315.187c91.643-55.546,99.976-120.799,99.976-136.08c0-124.967-112.807-123.583-112.807-123.583S124.313,54.14,124.313,179.107c0,15.281,8.34,80.534,99.987,136.08H249.62z"/><path style="fill:#A0D9DC;" d="M146.022,185.554c-18.484-18.469,1.804-69.615,20.273-88.092c18.473-18.477,63.202-35.999,81.664-17.538C266.436,98.405,164.499,204.023,146.022,185.554z"/><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></div>
+    <div id="detras-title"> 
+        <H1 id="title">Balloon Destroy</H1>
+    </div>
+    <div id="tiempo"></div>
+    <div id="bot">
+        <div id="marcador"></div>
+        <div id="fail"></div>
+        <button id="start" onclick="juego()">Empezar juego</button>
+    </div>
 </body>
+
+<script>
+    const box = document.getElementById('box');
+    const start = document.getElementById('start') 
+    const tiempo = document.getElementById('tiempo')
+    const marcador = document.getElementById('marcador')
+    const body = document.body
+    const failes = document.getElementById('fail')
+    var score = -1;
+    var fails = 0;
+    
+    failes.style.visibility = "hidden";
+    box.style.visibility = "hidden";
+    tiempo.style.visibility = "hidden";
+    body.style.backgroundImage = "url(https://img.freepik.com/vector-gratis/parque-infantil-parque-verano-carrusel_107791-1361.jpg?w=2000)";
+
+
+
+    function startCountdown() {
+        body.addEventListener('click', function(){
+                    fails = fails +1;
+                    failes.innerHTML = "Fallos:"+fails ;
+
+        })
+
+        const countdownDuration = 30;
+        const currentTime = new Date();
+        const countdownEndTime = currentTime.getTime() + (countdownDuration * 1000);
+        tiempo.innerHTML = "Tiempo:"+ countdownDuration;
+        let countdownInterval = setInterval(function() {
+        const currentTime = new Date();
+        let remainingTime = Math.floor((countdownEndTime - currentTime.getTime()) / 1000);
+        tiempo.innerHTML = "Tiempo:"+ remainingTime;
+      
+        if (remainingTime <= 0) {
+        clearInterval(countdownInterval);
+        box.style.display = "none";
+        tiempo.style.left = "100px";
+        tiempo.style.right = "0";
+        tiempo.style.top = "0";
+        tiempo.style.bottom = "600px";
+        tiempo.style.width = "90vw";
+        tiempo.style.fontSize = "200px";
+        tiempo.style.margin= "auto";
+        tiempo.innerHTML = "Se acabo el tiempo!";
+        body.style.backgroundColor = "#C70039";
+        tiempo.style.color = "#DAF7A6 "
+        body.style.backgroundImage = "none";
+        body.style.cursor = "auto";
+        fails = fails
+        body.addEventListener('click', function(){
+                    fails = fails -1;
+                    failes.innerHTML = "Fallos:"+fails ;
+         
+        })
+        }
+     }, 1000);
+    }
+ 
+    function random(x){
+        let randomNumber = Math.random();
+        randomNumber = randomNumber * x;
+        randomNumber = Math.floor(randomNumber);
+        randomNumber = randomNumber + 1;
+        return randomNumber
+    }
+    function juego(){
+        start.style.visibility = "hidden"
+        box.style.visibility = "visible";
+        tiempo.style.visibility = "visible";
+        failes.style.visibility = "visible"
+        failes.innerHTML = "Fallos:"+fails ;
+        document.getElementById('detras-title').style.visibility = "hidden";
+        body.style.cursor = "pointer"
+     
+        
+        jugar();
+        startCountdown();
+        fail();
+    }
+ 
+    function jugar(){
+        let randomNumber1 = random(600);
+        let randomNumber2 = random(1800);
+        let randomNumber3 = random(1800);
+        score = score + 1;
+        box.style.marginTop = randomNumber1 + "px";
+        box.style.marginRight = randomNumber2 + "px";
+        box.style.marginLeft = randomNumber3 + "px";
+        marcador.innerHTML = "Puntuación:" +score ;
+        fails = fails -1;
+        
+
+        explosion();
+    }
+    function explosion(){
+        document.getElementById('sonido').currentTime = 0;
+        document.getElementById('sonido').play()
+    
+    }
+   
+</script>
 </html>
